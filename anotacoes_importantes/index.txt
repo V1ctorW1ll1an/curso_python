@@ -1,0 +1,7 @@
+Caso o python preview apresentar o seguinte erro 
+'Failed to launch the Python Process, please validate the python'
+Por que no caminho do meu ambiente /usr/local/bin está à frente, 
+o /usr/bin que significa que pesquisará /usr/local/bin primeiro, 
+então crio um link para python3 em/usr/local/bin
+
+$ ln -s "$(which python3)" /usr/local/bin/python
